@@ -42,7 +42,13 @@ def linear_loss(data, target, w, b):
     return y_hat, loss, dw, db
 
 
-
+def linear_predict(data, params):
+    """
+        线性预测
+    """
+    w, b = params['w'], params['b']
+    y_pred = np.dot(data, w) + b
+    return y_pred
 
 
 
