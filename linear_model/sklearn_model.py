@@ -7,7 +7,7 @@
 @Version :   python3
 @Contact :   1658422730@qq.com
 '''
-from utils import load_data
+from logistic_regression.utils import load_data
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 

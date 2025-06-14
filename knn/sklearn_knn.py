@@ -9,7 +9,7 @@
 '''
 import time
 import numpy as np
-from utils import get_date
+from logistic_regression.utils import get_date
 from sklearn.neighbors import KNeighborsClassifier
 
 def model(trainData, trainlabel, testData, testlable, k = 3):

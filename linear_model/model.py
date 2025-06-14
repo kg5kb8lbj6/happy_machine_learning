@@ -9,7 +9,7 @@
 '''
 import numpy as np
 from tqdm import tqdm
-from utils import load_data, init_params, linear_loss
+from logistic_regression.utils import load_data, init_params, linear_loss
 import matplotlib.pyplot as plt
 
 
