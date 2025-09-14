@@ -1,5 +1,5 @@
 import numpy as np
-from utils import classify0
+from utils import classify0, file2matrix
 
 
 
@@ -24,4 +24,6 @@ if __name__ == "__main__":
     # print(test)
     
     ## 使用 k-近邻算法改进约会网站的配对效果
-    
+    path = '01KNN/data/datingTestSet.txt'
+    test = file2matrix(path)
+    print(test)
