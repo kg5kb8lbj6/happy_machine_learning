@@ -18,7 +18,10 @@ def createDataSet():
 
 
 if __name__ == "__main__":
-    group, labels = createDataSet()
-    test = classify0([1,1],group, labels, 3)
-    print(group.shape)
-    print(test)
+    # group, labels = createDataSet()
+    # test = classify0([1,1],group, labels, 3)
+    # print(group.shape)
+    # print(test)
+    
+    ## 使用 k-近邻算法改进约会网站的配对效果
+    
