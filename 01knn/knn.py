@@ -13,15 +13,14 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.utils import shuffle
 from sklearn.datasets import load_iris
 from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
 
 # Load dataset
 def get_data():
     data = load_iris()
     x,y = shuffle(data.data, data.target, random_state = 42)
     x = x.astype(np.float32)
-    offset = int(x.shape[0] * 0.7)
-    x_trin, y_train =x[:offset], y[:offset]
-    x_test, y_test = x[offset:], y[offset:]
+    x_trin,x_test,y_train,y_test = train_test_split(x , y, test_size = 0.3, random_state = 42, shuffle = True)
     y_train = y_train.reshape((-1, 1))
     y_test = y_test.reshape((-1, 1))
     return x_trin, y_train, x_test, y_test
